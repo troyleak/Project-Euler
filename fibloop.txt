@@ -1,0 +1,24 @@
+## This is the actual loop
+	print "adding"
+	if finalCount >= 4000000:
+		print "finalCount greater than 4M, ending loop"
+		return finalCount - counter
+	elif finalCount < 4000000:
+		print "finalCount less than 4M, entering loop"
+		## evaluates if fib(counter)%2 == 0 then adds it to counter if it is
+		## def isEven(counter):
+		print "checking if counter is even"
+		## I think this is the broken logic. Counter should increment by
+		## fibonacci numbers, not by 1
+		## fibCounter = fib(currentFib)
+		if currentFib <= 1:
+			print "Current Fibonacci is less than 1"
+			currentNumb = currentNumb + 1
+		elif (fibCounter%2==0):
+			print "currentFib is even, adding to stack"
+			currentNumb = currentNumb + 1
+			finalCount = finalCount + counter
+			print finalCount
+		else:
+			print "currentFib is odd, incrementing"
+			currentNumb = currentNumb + 1
