@@ -1,4 +1,6 @@
 import numpy
+import time
+s = time.time()
 
 matrix = numpy.array([
 [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
@@ -71,3 +73,4 @@ print "Horizontal max is: " + str(max(listHorizontal))
 print "Vertical max is: " + str(max(listVertical))
 print "Diagonally right max is: " + str(max(listDiagRt))
 print "Diagonally left max is: " + str(max(listDiagLeft))
+print "Completed in " + str(time.time() - s) + " seconds"
