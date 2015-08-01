@@ -30,10 +30,13 @@ def triangularNumbers(n):
 
 finalList = []
 
+print "building triangular number list"
 for i in xrange(5,50000):
     finalList.append(triangularNumbers(i))
 # Builds a list of triangular numbers
+# currently stuck here
 
+print "checking list for divisors"
 for x in finalList:
     if (len(factors(x)) > 500):
         print x
