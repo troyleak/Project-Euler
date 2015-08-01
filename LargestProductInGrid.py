@@ -31,8 +31,9 @@ print "finding maximum product of four linearly adjacent numbers"
 
 def prod(a,b):
     return a*b
+
 def horizontal(row,column):
-    return reduce(prod,matrix[row,column+0:column+4])
+    return reduce(prod, matrix[row,column+0:column+4])
 def vertical(row,column):
     return reduce(prod,matrix[row+0:row+4,column])
 def diagLeft(row,column):
@@ -54,6 +55,7 @@ listDiagLeft= []
 
 for rows in range(16):
     for columns in range(16):
+        print "calculating horizontal at " + str(rows) + str(columns)
         listHorizontal.append(horizontal(rows,columns))
 
 for rows in range(16):
